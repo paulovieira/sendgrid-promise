@@ -1,10 +1,10 @@
-var Sendgrid = require('./lib')
+var Sendgrid = require('./lib');
 
 var email = new Sendgrid.Email();
 
 // 1) from
 email['from'] = 'from@mail.com';
-email['fromname'] = 'from name'
+email['fromname'] = 'from name';
 
 
 // 2) to (one or more)
@@ -12,10 +12,10 @@ email['to'] = [];
 email['toname'] = [];
 
 email['to'].push('to-1@mail.com');
-email['toname'].push('to name one')
+email['toname'].push('to name one');
 
 email['to'].push('to-2@mail.com');
-email['toname'].push('to name two')
+email['toname'].push('to name two');
 
 
 // 3) cc (one or more)
@@ -23,10 +23,10 @@ email['cc'] = [];
 email['ccname'] = [];
 
 email['cc'].push('cc-1@mail.com');
-email['ccname'].push('cc name one')
+email['ccname'].push('cc name one');
 
 email['cc'].push('cc-2@mail.com');
-email['ccname'].push('cc name two')
+email['ccname'].push('cc name two');
 
 
 // 4) bcc (one or more)
@@ -34,7 +34,7 @@ email['bcc'] = [];
 email['bccname'] = [];
 
 email['bcc'].push('bcc-1@mail.com');
-email['bccname'].push('bcc name one')
+email['bccname'].push('bcc name one');
 
 
 // 5) reply-to
