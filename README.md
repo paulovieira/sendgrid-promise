@@ -6,7 +6,7 @@ Simple promise wrapper around the [official](https://github.com/sendgrid/sendgri
 
 Some functionality has been added by monkey-patching the `toWebFormat` method, namely the `ccname` and `bccname` fields (which are [documented in the web api](https://sendgrid.com/docs/API_Reference/Web_API/mail.html) but missing [in the official module](https://github.com/sendgrid/sendgrid-nodejs#available-params)).
 
-This module will export an instance of the sendgrid object which can be reused everywhere in your application (since nodejs modules are [cached](https://nodejs.org/api/modules.html#modules_caching) after the first time they are loaded).
+This module will export an instance of the sendgrid object ready to be used. This instance can be reused everywhere in your application (since nodejs modules are [cached](https://nodejs.org/api/modules.html#modules_caching) after the first time they are loaded).
 
 The API key is expected to be present in a text file located in `$PROJECT_ROOT/config/sendgrid-key.txt` (instead of the API key it can also be the user/password credentials, each in separate lines). See the example.
 
